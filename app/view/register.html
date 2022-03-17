@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册</title>
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/lib/theme-chalk/index.css">
+</head>
+
+<body>
+  <div id="app">
+      <el-form ref="form" :model="form" :rules="rules" label-width="80px">
+        <el-form-item label="用户名称" prop="name">
+          <el-input v-model="form.name" placeholder="输入名称"></el-input>
+        </el-form-item>
+
+        <el-form-item label="邮件" prop="email">
+          <el-input v-model="form.email" type="email" placeholder="输入电子邮件"></el-input>
+        </el-form-item>
+
+        <el-form-item label="区域" prop="district">
+          <el-select v-model="form.province" placeholder="请选择省">
+            <template v-for="item in form.options.provinces" :key="item.province">
+              <el-option :label="item.province" :value="item.province"></el-option>
+            </template>
+          </el-select>
+          <span>-</span>
+          <el-select v-model="form.city" placeholder="请选择市">
+            <template v-for="item in form.options.citys" :key="item.city">
+              <el-option :label="item.city" :value="item.city"></el-option>
+            </template>
+          </el-select>
+          <span>-</span>
+          <el-select v-model="form.districtcode" placeholder="请选择区">
+            <template v-for="item in form.options.districts" :key="item.district">
+              <el-option :label="item.district" :value="item.districtcode"></el-option>
+            </template>
+          </el-select>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" @click="onSubmit">注册</el-button>
+        </el-form-item>
+      </el-form>
+  </div>
+
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="https://unpkg.com/element-plus/lib/index.full.js"></script>
+  <script src="public/js/axios.min.js"></script>
+  <script src="public/js/register.js"></script>
+</body>
+
+</html>
