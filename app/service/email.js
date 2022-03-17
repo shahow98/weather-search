@@ -8,10 +8,10 @@ class EmailService extends Service {
     const transporter = Nodemailer.createTransport({
       host: 'HOST',
       port: 465,
-      secure: true, // true for 465, false for other ports
+      secure: true,
       auth: {
-        user: 'USER@DOMAIN', // generated ethereal user
-        pass: 'PASSWORD', // generated ethereal password
+        user: 'USER@DOMAIN',
+        pass: 'PASSWORD',
       },
       tls: {
         rejectUnauthorized: false,
@@ -19,10 +19,10 @@ class EmailService extends Service {
     });
 
     const info = await transporter.sendMail({
-      from: '"weathermaker🌍" <USER@DOMAIN>', // sender address
-      to, // list of receivers
-      subject, // Subject line
-      html: content, // html body
+      from: '"weathermaker🌍" <USER@DOMAIN>',
+      to,
+      subject,
+      html: content,
     });
 
     return info;

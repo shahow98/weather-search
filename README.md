@@ -2,11 +2,18 @@
 
 天气查询小服务
 
+## Bash
+
++ egg.js
++ mysql
++ 百度地图api
+
 ## QuickStart
 
-<!-- add docs here for user -->
-
-see [egg docs][egg] for more detail.
++ create a database 
++ running `ddl/weather_search_tables_ddl.sql` to mysql
++ open `app/config/default.js`  and editing `userConfig.mysql.client` 
++ open `app/service/email.js` and editing `EmailService.sender` 
 
 ### Development
 
@@ -22,12 +29,3 @@ $ open http://localhost:7001/
 $ npm start
 $ npm stop
 ```
-
-### npm scripts
-
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
-
-
-[egg]: https://eggjs.org
