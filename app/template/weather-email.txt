@@ -1,0 +1,9 @@
+【今日天气】
+【天气现象】：{{data.result.now.text}}
+【温度】：{{data.result.now.temp}}℃
+【体感温度】：{{data.result.now.feels_like}}℃
+【相对湿度】：{{data.result.now.rh}}rh
+【风力】：{{data.result.now.wind_class}}（{{data.result.now.wind_dir}}）
+【所在地】：{{data.result.location.city}}-{{data.result.location.name}}
+
+Power by weathermaker@shahow.top

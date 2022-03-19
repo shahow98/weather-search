@@ -21,19 +21,9 @@ class PushTask extends Subscription {
       }
       results.forEach(res => {
         const weather = JSON.parse(res.weather_msg);
-        if (weather.data.status == 0) {
-          const info = weather.data.result;
-          const content = ctx.service.email.wheatherContentBuild({
-            city: info.location.city,
-            region: info.location.name,
-            status: info.now.text,
-            now: info.now.temp,
-            rh: info.now.rh,
-            week: info.forecasts[0].week,
-            windClass: info.now.wind_class,
-            windDir: info.now.wind_dir,
-          });
-          ctx.service.email.sender(`[${info.location.name}]-[${info.now.temp}℃]-[${info.forecasts[0].week}]`, content, `"${user.name}" <${user.email}>`);
+        if (weather.data.status === 0) {
+          const content = ctx.service.email.wheatherContentBuild(weather);
+          ctx.service.email.sender(`【Weather Maker】${weather.data.result.location.name}-${weather.data.result.now.text}-${weather.data.result.now.temp}℃-${weather.data.result.forecasts[0].week}`, content, `"${user.name}" <${user.email}>`);
         }
       });
     });

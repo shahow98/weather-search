@@ -1,0 +1,214 @@
+{
+  "data": {
+    "status": 0,
+    "result": {
+      "location": {
+        "country": "中国",
+        "province": "福建省",
+        "city": "福州市",
+        "name": "晋安",
+        "id": "350111"
+      },
+      "now": {
+        "text": "多云",
+        "temp": 15,
+        "feels_like": 16,
+        "rh": 77,
+        "wind_class": "1级",
+        "wind_dir": "东风",
+        "uptime": "20220319073500"
+      },
+      "forecasts": [
+        {
+          "text_day": "晴",
+          "text_night": "阴",
+          "high": 26,
+          "low": 15,
+          "wc_day": "3~4级",
+          "wd_day": "东风",
+          "wc_night": "<3级",
+          "wd_night": "静风",
+          "date": "2022-03-19",
+          "week": "星期六"
+        },
+        {
+          "text_day": "阴",
+          "text_night": "阴",
+          "high": 22,
+          "low": 16,
+          "wc_day": "<3级",
+          "wd_day": "静风",
+          "wc_night": "<3级",
+          "wd_night": "静风",
+          "date": "2022-03-20",
+          "week": "星期日"
+        },
+        {
+          "text_day": "多云",
+          "text_night": "多云",
+          "high": 28,
+          "low": 19,
+          "wc_day": "3~4级",
+          "wd_day": "南风",
+          "wc_night": "<3级",
+          "wd_night": "静风",
+          "date": "2022-03-21",
+          "week": "星期一"
+        },
+        {
+          "text_day": "中雨",
+          "text_night": "小雨",
+          "high": 23,
+          "low": 13,
+          "wc_day": "<3级",
+          "wd_day": "静风",
+          "wc_night": "<3级",
+          "wd_night": "静风",
+          "date": "2022-03-22",
+          "week": "星期二"
+        },
+        {
+          "text_day": "多云",
+          "text_night": "多云",
+          "high": 17,
+          "low": 13,
+          "wc_day": "<3级",
+          "wd_day": "静风",
+          "wc_night": "<3级",
+          "wd_night": "静风",
+          "date": "2022-03-23",
+          "week": "星期三"
+        }
+      ]
+    },
+    "message": "success"
+  },
+  "status": 200,
+  "headers": {
+    "cache-control": "max-age=86400",
+    "connection": "keep-alive",
+    "content-length": "1155",
+    "content-type": "application/javascript;charset=utf-8",
+    "date": "Sat, 19 Mar 2022 00:00:00 GMT",
+    "expires": "Sun, 20 Mar 2022 00:00:00 GMT",
+    "http_x_bd_logid": "0000826378",
+    "http_x_bd_logid64": "0000826280444184842",
+    "http_x_bd_product": "map",
+    "http_x_bd_subsys": "apimap",
+    "server": "apache"
+  },
+  "res": {
+    "status": 200,
+    "statusCode": 200,
+    "statusMessage": "OK",
+    "headers": {
+      "cache-control": "max-age=86400",
+      "connection": "keep-alive",
+      "content-length": "1155",
+      "content-type": "application/javascript;charset=utf-8",
+      "date": "Sat, 19 Mar 2022 00:00:00 GMT",
+      "expires": "Sun, 20 Mar 2022 00:00:00 GMT",
+      "http_x_bd_logid": "0000826378",
+      "http_x_bd_logid64": "0000826280444184842",
+      "http_x_bd_product": "map",
+      "http_x_bd_subsys": "apimap",
+      "server": "apache"
+    },
+    "size": 1155,
+    "aborted": false,
+    "rt": 257,
+    "keepAliveSocket": false,
+    "data": {
+      "status": 0,
+      "result": {
+        "location": {
+          "country": "中国",
+          "province": "福建省",
+          "city": "福州市",
+          "name": "晋安",
+          "id": "350111"
+        },
+        "now": {
+          "text": "多云",
+          "temp": 15,
+          "feels_like": 16,
+          "rh": 77,
+          "wind_class": "1级",
+          "wind_dir": "东风",
+          "uptime": "20220319073500"
+        },
+        "forecasts": [
+          {
+            "text_day": "晴",
+            "text_night": "阴",
+            "high": 26,
+            "low": 15,
+            "wc_day": "3~4级",
+            "wd_day": "东风",
+            "wc_night": "<3级",
+            "wd_night": "静风",
+            "date": "2022-03-19",
+            "week": "星期六"
+          },
+          {
+            "text_day": "阴",
+            "text_night": "阴",
+            "high": 22,
+            "low": 16,
+            "wc_day": "<3级",
+            "wd_day": "静风",
+            "wc_night": "<3级",
+            "wd_night": "静风",
+            "date": "2022-03-20",
+            "week": "星期日"
+          },
+          {
+            "text_day": "多云",
+            "text_night": "多云",
+            "high": 28,
+            "low": 19,
+            "wc_day": "3~4级",
+            "wd_day": "南风",
+            "wc_night": "<3级",
+            "wd_night": "静风",
+            "date": "2022-03-21",
+            "week": "星期一"
+          },
+          {
+            "text_day": "中雨",
+            "text_night": "小雨",
+            "high": 23,
+            "low": 13,
+            "wc_day": "<3级",
+            "wd_day": "静风",
+            "wc_night": "<3级",
+            "wd_night": "静风",
+            "date": "2022-03-22",
+            "week": "星期二"
+          },
+          {
+            "text_day": "多云",
+            "text_night": "多云",
+            "high": 17,
+            "low": 13,
+            "wc_day": "<3级",
+            "wd_day": "静风",
+            "wc_night": "<3级",
+            "wd_night": "静风",
+            "date": "2022-03-23",
+            "week": "星期三"
+          }
+        ]
+      },
+      "message": "success"
+    },
+    "requestUrls": [
+      "http://api.map.baidu.com/weather/v1/?district_id=350111&data_type=all&ak=4yHCcB6nDBrsbW1Ot7qqa6MscRIC98vV"
+    ],
+    "timing": null,
+    "remoteAddress": "157.255.77.197",
+    "remotePort": 80,
+    "socketHandledRequests": 1,
+    "socketHandledResponses": 1
+  }
+}
